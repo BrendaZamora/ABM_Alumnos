@@ -179,17 +179,23 @@
             e.Handled = True
             Exit Sub
         End If
+        If e.KeyChar = "." And (pos = 2) Or (pos = 6) Then
+            e.Handled = False
+            Exit Sub
+        End If
 
-        If Char.IsNumber(e.KeyChar) And (pos = 2) Or (pos = 10) Then
+        If Char.IsNumber(e.KeyChar) And (pos = 2) Or (pos = 7) Then
             e.Handled = True
             Exit Sub
 
-        End If
-        If Not Char.IsNumber(e.KeyChar) And Not Char.IsControl(e.KeyChar) And Not e.KeyChar = ":" And (pos = 2 Or pos = 6) Then
-            e.Handled = True
-            Exit Sub
+
 
         End If
+        'If Not Char.IsNumber(e.KeyChar) And Not Char.IsControl(e.KeyChar) And e.KeyChar = "." And (pos = 2 Or pos = 6) Then
+        '    e.Handled = False
+        '    Exit Sub
+
+        'End If
 
 
     End Sub

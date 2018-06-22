@@ -92,7 +92,7 @@ Partial Class AlumnoForm
         'TextBox2
         '
         Me.TextBox2.Location = New System.Drawing.Point(131, 55)
-        Me.TextBox2.MaxLength = 11
+        Me.TextBox2.MaxLength = 10
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(198, 20)
         Me.TextBox2.TabIndex = 6
